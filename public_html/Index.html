@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La Espuma Wash PREMIUM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <!-- TITULO Y LOGO DE EMPRESA -->
+            <div>
+                <h1>LA ESPUMA CAR WASH PREMIUM
+                    <img src="img/car.png" alt="Icono Lavado" width="50px" height="50px"/>
+                    <img src="img/car.png" alt="Icono Lavado" width="50px" height="50px"/>
+                    <img src="img/car.png" alt="Icono Lavado" width="50px" height="50px"/>
+                </h1>
+            </div>
+            
+            <h2>Nuestros Servicios</h2>
+            <p>Ofrecemos lavados completos para vehículos pequeños, medianos y grandes.</p><br>
+            <img src="img/11848.jpg" alt="Logo Empresa" width="300px" height="200px"/>
+            
+            <h2>Catalogo de servicios</h2>
+            
+            <!-- LAVADO VEHICULO PEQUEÑO -->
+            <div>
+                <h3>1. Lavado vehículo pequeño</h3>
+                <img src="img/VehiculoPequeño.jpg" alt="Vehiculo de tamaño pequeño" width="300px" height="200px"/>
+            </div>
+            
+            <!-- LAVADO VEHICULO MEDIANO -->
+            <div>
+                <h3>2. Lavado vehículo mediano</h3>
+                <img src="img/AutoMediano.jpg" alt="Vehiculo de tamaño mediano" width="300px" height="200px"/>
+            </div>
+            
+            <!-- LAVADO VEHICULO GRANDE -->
+            <div>
+                <h3>3. Lavado vehículo grande</h3>
+                <img src="img/AutoGrande.jpg" alt="Vehiculo de tamaño grande" width="300px" height="200px"/>
+            </div>
+            
+            <!-- VALORES -->
+            <h3>Valores:</h3>
+            <p>Lavado Simple: $8.000  (Lavado exterior con shampoo alta calidad. Interior aspirado).</p>
+            <p>Lavado Normal: $15.000 (Lavado exterior con shampoo alta calidad full llantas, encerado. Interior aspirado).</p>
+            <p>Lavado Premium: $20.000 (Lavado exterior con shampoo alta calidad full llantas, encerado. Interior lavado de tapiz y aspirado).</p>
+            
+            <!-- FORMULARIO DE RESERVA -->
+            <div>
+                <h3>Completa el formulario para reservar</h3>
+                <form action="enviar_reserva" method="post">
+                    
+                    <!-- ELECCIÓN DE FECHA DE RESERVA -->
+                    <label for="calendar">Fecha de Reserva:</label>
+                    <input type="datetime-local" id="datetime-local" name="datetime-local" required>
+                    <br><br>
+                    
+                    <!-- ELECCIÓN DE TAMAÑO DE VEHICULO -->
+                    <label for="tamaño">Ingresa el tamaño de tu vehículo:</label>
+                    <select id="tamaño" name="tamaño" required>
+                        <option value="pequeño">Vehículo pequeño</option>
+                        <option value="mediano">Vehículo mediano</option>
+                        <option value="grande">Vehículo grande</option>
+                    </select>
+                    <br><br>
+                    
+                    <!-- ELECCIÓN DE TIPO DE LAVADO -->
+                    <label for="tipo_lavado">Ingresa el tipo de lavado:
+                    <br><br>
+                    
+                    <input type="radio" id="tipo_lavado1" name="tipo_lavado" value="tipo_lavado1">
+                    <label for="tipo_lavado1">Lavado Simple</label><br>
+                    
+                    <input type="radio" id="tipo_lavado2" name="tipo_lavado" value="tipo_lavado2">
+                    <label for="tipo_lavado2">Lavado Normal</label><br>
+                    
+                    <input type="radio" id="tipo_lavado3" name="tipo_lavado" value="tipo_lavado3">
+                    <label for="tipo_lavado3">Lavado Premium</label>
+                    <br><br>
+                    
+                    <!-- DATOS DEL CLIENTE -->
+                    <label>Ingresa tus datos:</label>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Telefono:</label>
+                    <input type="phone" id="phone" name="phone" required>
+                    
+                    <!-- BOTON RESERVAR -->
+                    <input type="submit" value="Reservar">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
